@@ -19,7 +19,7 @@ function Frutas(){ //componente
                 <div className="min-h-screen bg-black/50 p-10">
                     <CRUD
                         titulo="Frutas del Diablo - Gestión de Frutas"
-                        endpoint="http://localhost:3000/api/frutas"
+                        endpoint={`${import.meta.env.VITE_API_URL}/frutas`}
                         //endpoint de la api donde se hacen las peticiones
                         columnas={columnas}
                         idField="id_fruta"

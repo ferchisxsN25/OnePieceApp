@@ -21,7 +21,7 @@ function Personajes(){ //componente
 
                     <CRUD
                         titulo="Tripulación – Gestión de Personajes"
-                        endpoint="http://localhost:3000/api/personajes"
+                        endpoint={`${import.meta.env.VITE_API_URL}/personajes`}
                         //endpoint de la api donde se hacen las peticiones
                         columnas={columnas}
                         idField="id_personaje"
